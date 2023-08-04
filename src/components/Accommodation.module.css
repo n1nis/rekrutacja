@@ -1,0 +1,130 @@
+.accommodation {
+  width: 100%;
+  margin-left: 20px;
+  padding: 1em;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  margin-top: 1.5rem;
+  box-shadow: 0px 2px 15px 1px #39393940;
+}
+
+.image {
+  background-image: url("../utils/room2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 35%;
+  position: relative;
+}
+
+.pos {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.cardInfo {
+  padding: 1em;
+  width: 100%;
+}
+
+.cardInfoTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.cardInfoTitle span {
+  color: #f42e2f;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+.flex h3 {
+  margin: 0 0.8em;
+}
+
+.cardInfo p {
+  font-size: 12px;
+  margin-top: 1em;
+}
+
+.bottomInfo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.bottomLeftInfo {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallImage {
+  width: 8em;
+  height: 5em;
+  margin-top: 1.5em;
+  background-image: url("../utils/room1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bottomRightInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomRightInfo button {
+  background-color: #f42e2f;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0.3em;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+  }
+  .image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .bottomInfo {
+    flex-direction: column;
+    height: auto;
+  }
+  .bottomLeftInfo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .smallImage {
+    height: 150px;
+    width: 90%;
+    margin-bottom: .5em;
+  }
+  .accommodation{
+    margin: 0;
+  }
+}
