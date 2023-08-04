@@ -14,10 +14,10 @@ const Accommodation = () => {
           <h3>SORTOWANIE</h3>
         </div>
       </div>
-      <Card />
-      <Card />
+      <Card isTransparent={true} />
+      <Card isTransparent={true}/>
       <Advertisement />
-      <Card />
+      <Card isTransparent={false}/>
     </div>
   );
 };

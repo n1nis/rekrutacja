@@ -24,10 +24,27 @@
   position: relative;
 }
 
+.position {
+  position: absolute;
+  right: 6%;
+  top: 10%;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+}
+
+.transparentBackground {
+  position: absolute;
+  right: 6%;
+  top: 10%;
+  background-color: transparent;
+  height: 15px;
+  width: 15px;
+}
+
 .pos {
   position: absolute;
-  right: 5%;
-  top: 5%;
+  transform: translate(-30%, -30%);
 }
 
 .cardInfo {
@@ -122,9 +139,9 @@
   .smallImage {
     height: 150px;
     width: 90%;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
-  .accommodation{
+  .accommodation {
     margin: 0;
   }
 }

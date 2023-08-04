@@ -1,13 +1,20 @@
 import React from "react";
 import classes from "./Accommodation.module.css";
-import { FaRegHeart } from "react-icons/fa";
+import { IoHeartCircle } from "react-icons/io5";
 
-const Card = () => {
+const Card = ({isTransparent}) => {
+
   return (
     <div className={classes.card}>
       <div className={classes.image}>
-        <div className={classes.pos}>
-          <FaRegHeart color="red" size={26} />
+        <div
+          className={
+            isTransparent ? classes.position : classes.transparentBackground
+          }
+        >
+          <div className={classes.pos}>
+            <IoHeartCircle fill="white" size={32} />
+          </div>
         </div>
       </div>
       <div className={classes.cardInfo}>
